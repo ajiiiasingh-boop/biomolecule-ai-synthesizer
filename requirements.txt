@@ -1,0 +1,15 @@
+# Bio-Clay AI Synthesizer — Python Edition
+# Install with:  pip install -r requirements.txt      (Python 3.11 or newer)
+
+# --- core (the 5 you asked for) ---
+streamlit>=1.60        # the web app itself (replaces React + HTML + CSS + JS)
+pandas>=2.1            # tables: property comparison, valence check, bond geometry, CSV download
+numpy>=1.26            # vector maths: bond lengths, radar-chart scaling, adjacency matrix
+plotly>=5.20           # interactive charts + the rotating 3D ball-and-stick molecule
+scipy>=1.11            # solve_ivp (reaction kinetics), minimize (3D geometry clean-up), spatial distances
+
+# --- extra libraries ---
+matplotlib>=3.8        # 2D skeletal structure drawing + molecular graph picture
+networkx>=3.2          # molecule as a graph: valency check, longest carbon chain, rings
+google-genai>=1.0      # OPTIONAL: live Gemini AI answers (app works offline without a key)
+python-dotenv>=1.0     # OPTIONAL: read GEMINI_API_KEY from a .env file
